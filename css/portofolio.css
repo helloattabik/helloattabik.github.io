@@ -1,0 +1,70 @@
+#portofolio{
+    position: relative;
+    width: 100%;
+    height: 400vh;
+    overflow: hidden;
+
+
+}
+
+
+#portofolio::before{
+    content: '';
+    position: absolute;
+    width: 400%;
+    height: 300vh;
+    top: 0;
+    left: 50%;
+    border-radius: 50% ; 
+    transform: translate(-50%, 10rem);
+   background: radial-gradient(var(--color3)60%, var(--color2) 70%, rgba(255,255,255,0) 80% );
+    z-index: -1;
+    filter: blur(3rem);
+}
+
+ #portofolio::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: var(--color1);
+    left: 0;
+    top: 0;
+    z-index: -2;
+} 
+
+
+
+
+
+
+#portofolio .container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#portofolio .heading h2 , #portofolio .heading p{
+    color: var(--color6);
+}
+
+
+.button-container{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    height: 6rem;
+    width: 20rem;
+    padding: 2rem;
+}
+
+.button-mobile{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 0%);
+    background: none;
+    background-color: var(--color1);
+    color: var(--color3);
+}

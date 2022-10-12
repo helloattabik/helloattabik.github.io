@@ -1,0 +1,120 @@
+#fake-preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1999;
+    transition: .6s cubic-bezier(.91,-0.01,.5,1.1);
+}
+
+
+
+#fake-preloader .fp-container{
+    display: flex;
+    width: 200%;
+    height: 100%;
+    transition: .6s cubic-bezier(.91,-0.01,.5,1.1);
+  
+}
+
+#fake-preloader .brand{
+    transform: scale(1.5);
+    animation: .5s fp-brand ;
+}
+
+#fake-preloader .brand h2{
+    font-size: 2rem;
+    color: var(--color6);
+}
+
+@keyframes fp-brand {
+    0%{
+        transform: scale(0.8) rotate(24deg) skew(0deg, -13deg);
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+
+.fp-page1{
+    position: relative;
+    width: 100vw;
+    background-color: var(--color1);
+}
+
+.fp-page2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    background-color: var(--color2);
+    transition: .6s cubic-bezier(.91,-0.01,.5,1.1);
+
+}
+
+.fp-page2 h1{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    transition: .6s cubic-bezier(.91,-0.01,.5,1.1);
+    animation: .6s opacity-out ;
+    color: var(--color6);
+
+}
+
+
+
+.fp-count{
+    position: fixed;
+    bottom: var(--padding1);
+    color: var(--color6);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    mix-blend-mode: exclusion;
+    z-index: 1001;
+    animation: 2s fadeout;
+
+}
+
+@keyframes  fadeout {
+    0% {opacity: 0; bottom: 0;}
+    100% {opacity: 1;} 
+ } 
+
+
+#fake-preloader .fp-container.active{
+    transform: translateX(-100vw);
+}
+
+#fake-preloader.active{
+    transform: translateX(-100%);
+    
+}
+
+.fp-page2 h1.active{
+    transform: translateY(-100%) translateX(100%);
+}
+
+@media screen and (max-width: 768px) {
+
+    #fake-preloader .brand{
+        transform: scale(1);
+    }
+
+
+    .fp-page2 h1{
+        text-align: center;
+        max-width: 10rem;
+    }
+}
