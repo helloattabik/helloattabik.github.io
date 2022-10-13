@@ -5,83 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tri Misbachul Attabik</title>
+
     <!-- Link to AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Link to Slick -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
     <!-- Link to CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fake-preloader.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/certificate.css">
-    <link rel="stylesheet" href="css/portofolio.css">
-    <link rel="stylesheet" href="css/experience.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <!-- Link to Favicon -->
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
-    <!-- Link to Flaticon -->
+
+    <!-- Link to CDN CSS Flaticon -->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
-    
 </head>
 <body>
-
-
     <!-- Custom Cursor -->
     <div id="cursor"></div>
 
-    <!-- Fake Pre-Loader Here -->
-    <div id="fake-preloader" >
-        <div class="fp-container">
-            <div class="fp-page1 flex-center">
+    <!-- Fake Pre-Loader -->
+    <div id="fake-preloader">
+        <h2 class="fp-count"></h2>
+        <div class="container"> 
+            <div class="fp-page fp-page1">
                 <div class="brand">
                     <img src="assets/logo/logo-helloattabik-white.png" alt="Tri Misbachul Attabik">
-                    <h2>Hello <span class="satoshi-bold">Attabik</span></h2>
+                    <h3>Hello <span class="bolder">Attabik</span></h3>
                 </div>
             </div>
-            <div class="fp-page2 flex-center">
-                <h1>Hello Everyone</h1>
+            <div class="fp-page fp-page2">
+                <h2>Hello Everyone!</h2>
             </div>
         </div>
-        <h2 class="fade-out fp-count"></h2>
     </div>
 
-    <!-- Navigation Bar Here -->
+    <!-- Navbar Section Here -->
     <nav>
-        <div class="container">
-            
+        <div class="container padding">
             <a href="#" class="brand">
                 <img src="assets/logo/logo-helloattabik-white.png" alt="Tri Misbachul Attabik">
-                <h4>Hello <span class="Satoshi-Bold"> Attabik</span></h4>
-                <div class="label">
-                    <span>Open to</span>
-                    <span class="button-s">Work</span>
+                <h4>Hello <span class="bolder">Attabik</span></h4>
+                <div class="open-to-work">
+                    <span>Hire Me</span>
+                    <span class="button-s">Now</span>
                 </div>
             </a>
 
+            <!-- Navigation List -->
             <ul class="nav-list">
-                <li><a class="nav-item" href="#home">Homepage</a></li>
-                <li><a class="nav-item" href="#about">About Me</a></li>
-                <li><a class="nav-item" href="#skills">Skills</a></li>
-                <li><a class="nav-item" href="https://attabik.medium.com" target="_blank">Blog <span class="button-s">New</span> </a></li>
-                <li class="nav-dropdown" ><a class="more nav-item" >More</a>
+                <li><a class="b" href="#hero">Homepage</a></li>
+                <li><a class="b" href="#about">About Me</a></li>
+                <li><a class="b" href="#skills">Skills</a></li>
+                <li><a class="b" href="https://helloattabik.medium.com" target="_blank">Blog <span class="button-s">New</span></a></li>
+                <li><a class="more">More</a>
                     <ul class="dropdown-list">
-                        <li><a class="dropdown-item" href="assets/pdf/CV_TRI+MISBACHUL+ATTABIK_COM.pdf" download="">Download CV</a></li>
-                        <li><a  class="dropdown-item" href="#certificate">Certificate</a></li>
-                        <li><a  class="dropdown-item" href="#portofolio">Portofolio</a></li>
+                        <li><a href="#certificate">Certificate</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="assets/pdf/CV_TRI+MISBACHUL+ATTABIK_COM.pdf" download="">Download CV</a></li>
                     </ul>
                 </li>
-                <li><a class="nav-item button-m" href="https://wa.me/+6289514186731" target="_blank">Contact Me <i class="flex-center fi fi-rr-arrow-right"></i> </a></li>
+                <li><a href="https://wa.me/+6289514186731" target="_blank" class="b button-m">Contact Me <i class="fi fi-rr-arrow-right"></i></a></li>
             </ul>
 
+            <!-- Hamburger Menu -->
             <div class="hamburger-menu">
                 <span></span>
                 <span></span>
@@ -91,427 +81,160 @@
     </nav>
 
     <!-- Hero Section Here -->
-    <section id="hero" >
-        <div id="home" class="container">
-            <div class="hero-images flex-center">
-                <img src="assets/images/Tri Misbachul Attabik.png" alt=" Tri Misbachul Attabik">
+    <section id="hero">
+        <div class="container">
+            <div class="hero-images">
+                <img src="assets/img/Tri Misbachul Attabik.png" alt="Tri Misbachul Attabik">
                 <div class="circle circle1"></div>
                 <div class="circle circle2"></div>
                 <div class="hero-button">
-                    <a class="button-m" href="#">Hire Me <i class="flex-center fi fi-rr-arrow-right"></i></a>
-                    <a href="#" download="" class="download-cv button-m"> Download CV</a>
+                    <a href="https://wa.me/+6289514186731" target="_blank" class="button-m">Hire Me <i class="fi fi-rr-arrow-right"></i></a>
+                    <a href="assets/pdf/CV_TRI+MISBACHUL+ATTABIK_COM.pdf" class="button-m" download="">Download CV</a>
                 </div>
             </div>
-            <div class="hero-content flip-left">
+            <div class="hero-content">
                 <h1>Hello <span class="hero-typed"></span></h1>
                 <h1>I am Tri Misbachul Attabik</h1>
-                <p>I graduated from SMK Negeri 3 Jepara majoring in Computer and Network Engineering in June 2022. <span class="remove">Web Development, Linux Environments, Computer Networking, Graphic Design, and Other Technology (Related Topics) are very interesting to me.</span></p>
+                <p>I graduated from SMK Negeri 3 Jepara majoring in Computer and Network Engineering in June 2022. <span class="rm-768">Web Development, Linux Environments, Computer Networking, Graphic Design, and Other Technology (Related Topics) are very interesting to me.</span></p>
                 <div class="hero-button">
-                    <a class="button-m" href="#">Hire Me <i class="flex-center fi fi-rr-arrow-right"></i></a>
-                    <li class = "icon" ><a href="linkedin.com/in/tri-misbachul-attabik-70a903194/" target="_blank"><i class="flex-center fi fi-brands-linkedin"></i></a></li>
-                    <li class="icon" ><a href="https://twitter.com/@Hello_Attabik" target="_blank"><i class="flex-center fi fi-brands-twitter"></i></a></li>
-                    <li class="icon"><a href="https://instagram.com/hello.attabik" target="_blank"><i class="flex-center fi fi-brands-instagram"></i></a></li>
-                    <li class="icon"><a href="https://attabik.github.io" target="_blank"><i class="flex-center fi fi-brands-github"></i></a></li>
-                    <a href="#" download="" class="download-cv button-m"> Download CV </a>
+                    <a href="https://wa.me/+6289514186731" target="_blank" class="button-m">Hire Me <i class="fi fi-rr-arrow-right"></i></a>
+                    <li><a class="icon" href="linkedin.com/in/tri-misbachul-attabik-70a903194/" target="_blank"><i class="flex-center fi fi-brands-linkedin"></i></a></li>
+                    <li><a class="icon" href="https://twitter.com/@Hello_Attabik" target="_blank"><i class="flex-center fi fi-brands-twitter"></i></a></li>
+                    <li><a class="icon" href="https://instagram.com/hello.attabik" target="_blank"><i class="flex-center fi fi-brands-instagram"></i></a></li>
+                    <li><a class="icon" href="https://attabik.github.io" target="_blank"><i class="flex-center fi fi-brands-github"></i></a></li>
+                  
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section Here -->
-    <section id="about">
-        <div class="container padding">
-            <div class="heading" data-aos="fade-up" data-aos-offset="100" >
-                <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium adipisci dolore ullam, voluptate eligendi reiciendis?</p>
-            </div>
-        </div>
-    </section>
-
- <!-- Skills Section -->
- <section id="skills">
-    <div class="skills-circletop"></div>
-
-    <div class="container padding">
-        <div class="skills-circle skills-circle1"></div>
-        <div class="skills-circle skills-circle2"></div>
-        <div class="heading" data-aos="fade-up" data-aos-offset="100">
-            <h2>Skills.</h2>
-            <p>Here are some of the skills and experience I have.</p>
-        </div>
-        <div class="card-wrapper">
-
-            <!-- Card1 -->
-            <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-duration="800" >
-                <!-- <img class="round-q" src="assets/object/round-quarter-bluesky.png" alt=""> -->
-                <div class="card-image">
-                    <h5>Intermediate Level</h5>
-                    <h3>Linux <span class="Satoshi-Bold">System Administration</span></h3>
-                </div>
-                <div class="card-content">
-                    <!-- <p>When I was in Vocational High School, I won a student competency competition in the IT Network System Administration competition at the Jepara district level.</p> -->
-                    <ul class="card-list" >
-                        <li><i class="fi fi-sr-comment-check"></i><p>OSI Models</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>TCP/IP</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Networking</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Security</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Protocols</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>DNS</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Web Server</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Proxy</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Firewall</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Bash Script</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Monitoring</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Network Tools</p></li>
-                    </ul>
-                
-                </div>
-            </div>
-
-            <!-- Card2 -->
-            <div class="card" data-aos="fade-up" data-aos-offset="100" data-aos-duration="600"  >
-                <!-- <img class="round-q" src="assets/object/round-quarter-bluesky.png" alt=""> -->
-                <div class="card-image">
-                    <h5>Advanced Level</h5>
-                    <h3>Brand Identity & <span class="Satoshi-Bold">Logo Design</span></h3>
-                </div>
-                <div class="card-content">
-                    <!-- <p>I have work experience as a freelance logo & brand identity designer for more than 1 year.</p> -->
-                    <ul class="card-list" >
-                        <li><i class="fi fi-sr-comment-check"></i><p>Logo Design</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Mockup Design</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Presentation</p></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Card3 -->
-
-            <!--
-            <div class="card">
-                <div class="card-image">
-                    <h4>Frontend <span class="Satoshi-Bold">Web Development</span></h4>
-                </div>
-                <div class="card-content">
-                    <ul class="card-list" >
-                        <li><i class="fi fi-sr-comment-check"></i><p>HTML5</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>CSS3</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Basic JS</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Basic PHP</p></li>
-                    </ul>
-                </div>
-            </div>
-                -->
-            
-            <!-- Card4 -->
-            <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-duration="800" >
-                <!-- <img class="round-q" src="assets/object/round-quarter-bluesky.png" alt=""> -->
-                <div class="card-image">
-                    <h5>Intermediate Level</h5>
-
-                    <h3>IT <span class="Satoshi-Bold">Network Support</span></h3>
-                </div>
-                <div class="card-content">
-                    <!-- <p>At least I've made one personal static website that I created using HTML, CSS, and basic Java Script.</p> -->
-                    <ul class="card-list" >
-                        <li><i class="fi fi-sr-comment-check"></i><p>OSI Models</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>TCP IP</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Networking</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Cisco Device</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>MikroTik Device</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>TP-Link Device</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Wireless (BTS)</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Fiber Optic</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Routing</p></li>
-                        <li><i class="fi fi-sr-comment-check"></i><p>Switching</p></li>
-                    </ul>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</section>
-
-  
-
-
-    <!-- Certificate Section Here -->
+    <!-- Certificate -->
     <section id="certificate">
         <div class="container padding">
-            <div class="cert-circle cert-circle1"></div>
-            <div class="cert-circle cert-circle2"></div>
-            <div class="heading" data-aos="fade-up" data-aos-offset="100">
-                <h2>certificate & achievement</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore omnis labore enim maiores quasi! Fugiat.</p>
+            <div class="heading">
+                <h1 data-aos="fade-left" data-aos-offset="100">Certificate & Achievement</h1>
+                <p data-aos="fade-right" data-aos-offset="100">I have several achievements and credentials that prove my talents and abilities.</p>
             </div>
             <div class="cert-list">
+
                 
-                <div class="cert-item">
-                    <h3 class="cert-title"  data-aos="fade-right" data-aos-offset="0">MikroTik</h3>
-
-                    <div class="description"  data-aos="fade-right">
-                        <h5>MikroTik Certified Network Associate</h5>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptates, deleniti aspernatur numquam eos dolores beatae eligendi labore enim iste.</p>                        
+                <div class="cert-item" >
+                    <div class="cert-head">
+                        <h3>MikroTik</h3>
                     </div>
-                    <div class="cert-button"  data-aos="fade-right" data-aos-offset="0">
-                        <a href="assets/pdf/SERTIFIKAT_MTCNA_TRI MISBACHUL ATTABIK.pdf" download="" class="button-m"><span class="remove" >Download</span><i class="flex-center fi fi-br-download"></i></a>
-                        <a class="button-m cert-view cert-view-a"><span> View</span><i class="remove flex-center fi fi-rr-eye"></i></a>
+                    <div class="cert-description">
+                        <h4>MikroTik Certified Network Associate</h4>
+                        <p>The entry-level MikroTik certification program for Network Engineers. This certification improves or adds value to the Network Engineer by assisting them in comprehending the fundamentals of networking.</p>
                     </div>
-                    <div class="cert-onview cert-onview-a">
-                        <p class="button-m"><span>Close</span></p>
-                        <div>
-                            <img src="assets/images/SERTIFIKAT_MTCNA_TRI MISBACHUL ATTABIK.jpg" alt="">
-                            <a class="icon" href="assets/pdf/SERTIFIKAT_MTCNA_TRI MISBACHUL ATTABIK.pdf" download=""></a>
-                        </div>               
+                    <div class="cert-button">
+                        <a class="button-m cert-button-a">View <i class="rm-768 fi fi-rr-eye"></i></a>
+                        <a href="assets/pdf/SERTIFIKAT_MTCNA_TRI MISBACHUL ATTABIK.pdf" class="button-m"><span class="rm-768">Download</span> <i class="fi fi-br-download"></i></a>
+                    </div>
+                    <div class="cert-view cert-view-a">
+                        <img src="assets/img/SERTIFIKAT_MTCNA_TRI MISBACHUL ATTABIK.jpg" alt="Tri Misbachul Attabik">
+                        <a class="button-m  cert-close-a">Close</a>
                     </div>
                 </div>
 
                 <div class="cert-item">
-                    <h3 class="cert-title" data-aos="fade-left">BNSP</h3>
-                    <div class="description" data-aos="fade-left">
-                        <h5>Junior Network Administrator</h5>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptates, deleniti aspernatur numquam eos dolores beatae eligendi labore enim iste.</p>                        
+                    <div class="cert-head">
+                        <h3>BNSP</h3>
                     </div>
-                    <div class="cert-button" data-aos="fade-left">
-                        <a href="assets/pdf/SERTIFIKAT_BNSP_TRI MISBACHUL ATTABIK.pdf" download="" class="button-m"><span class="remove" >Download</span><i class="flex-center fi fi-br-download"></i></a>
-                        <a class="button-m cert-view cert-view-b"><span> View</span><i class="remove flex-center fi fi-rr-eye"></i></a>
+                    <div class="cert-description">
+                        <h4>Junior Network Administrator</h4>
+                        <p>Junior Network Administrator certification program offered by BNSP. Junior Network Administrators can better comprehend the fundamentals of computer network administration with the aid of this certification.<p>
                     </div>
-                    <div class="cert-onview cert-onview-b">
-                        <p class="button-m"><span>Close</span></p>
-                        <div>
-                            <img src="assets/images/SERTIFIKAT_BNSP_TRI MISBACHUL ATTABIK.jpg" alt="">
-                            <a class="icon" href="assets/pdf/SERTIFIKAT_BNSP_TRI MISBACHUL ATTABIK.pdf" download=""></a>
-                        </div>
+                    <div class="cert-button">
+                        <a class="button-m cert-button-b">View <i class="rm-768 fi fi-rr-eye"></i></a>
+                        <a href="assets/pdf/SERTIFIKAT_BNSP_TRI MISBACHUL ATTABIK.pdf" class="button-m"><span class="rm-768">Download</span> <i class="fi fi-br-download"></i></a>
+                    </div>
+                    <div class="cert-view cert-view-b">
+                        <img src="assets/img/SERTIFIKAT_BNSP_TRI MISBACHUL ATTABIK.jpg" alt="Tri Misbachul Attabik">
+                        <a class="button-m  cert-close-b">Close</a>
                     </div>
                 </div>
-
-                <!-- LKS 30 Kabupaten Jepara -->
 
                 <div class="cert-item">
-                    <h3 class="cert-title" data-aos="fade-right">LKS 30 Kabupaten Jepara</h3>
-                    <div class="description" data-aos="fade-right" >
-                        <h5>1st IT Network System Administration</h5>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptates, deleniti aspernatur numquam eos dolores beatae eligendi labore enim iste.</p>                        
+                    <div class="cert-head">
+                        <h3>PT. Sarana Insan Muda Selaras</h3>
                     </div>
-                    <div class="cert-button" data-aos="fade-right">
-                        <a href="assets/pdf/PIAGAM LKS_TRI MISBCAHUL ATTABIK.pdf" download="" class="button-m"><span class="remove" >Download</span><i class="flex-center fi fi-br-download"></i></a>
-                        <a class="button-m cert-view cert-view-c"><span> View</span><i class="remove flex-center fi fi-rr-eye"></i></a>
+                    <div class="cert-description">
+                        <h4>IT Network Support Intership</h4>
+                        <p>PT. Sarana Insan Muda Selaras facilities publishes the IT Network Support Internship Certification Program for Computer and Network Engineering Students. This credential serves as confirmation that you successfully completed a three-month internship in IT network support.</p>
                     </div>
-                    <div class="cert-onview cert-onview-c">
-                        <p class="button-m"><span>Close</span></p>
-                        <div>
-                            <img src="assets/images/PIAGAM LKS_TRI MISBCAHUL ATTABIK.jpg" alt="">
-                            <a class="icon" href="assets/pdf/PIAGAM LKS_TRI MISBCAHUL ATTABIK.pdf" download=""></a>
-                        </div>
+                    <div class="cert-button">
+                        <a class="button-m cert-button-c">View <i class="rm-768 fi fi-rr-eye"></i></a>
+                        <a href="assets/pdf/SERTIFIKAT_MAGANG_TRI MISBACHUL ATTABIK.pdf" class="button-m"><span class="rm-768">Download</span> <i class="fi fi-br-download"></i></a>
+                    </div>
+                    <div class="cert-view cert-view-c">
+                        <img src="assets/img/SERTIFIKAT_MAGANG_TRI MISBACHUL ATTABIK.jpg" alt="Tri Misbachul Attabik">
+                        <a class="button-m  cert-close-c">Close</a>
                     </div>
                 </div>
-
-                <!-- PT Sarana Insan Muda Selaras -->
 
                 <div class="cert-item">
-                    <h3 class="cert-title" data-aos="fade-left">PT. Sarana Insan Muda Selaras</h3>
-                    <div class="description" data-aos="fade-left">
-                        <h5>IT Network Support Intership</h5>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptates, deleniti aspernatur numquam eos dolores beatae eligendi labore enim iste.</p>                        
+                    <div class="cert-head">
+                        <h3>LKS 30 Kabupaten Jepara</h3>
                     </div>
-                    <div class="cert-button" data-aos="fade-left">
-                        <a href="assets/pdf/SERTIFIKAT_MAGANG_TRI MISBACHUL ATTABIK.pdf" download="" class="button-m"><span class="remove" >Download</span><i class="flex-center fi fi-br-download"></i></a>
-                        <a class="button-m cert-view cert-view-d"><span> View</span><i class=" remove flex-center fi fi-rr-eye"></i></a>
+                    <div class="cert-description">
+                        <h4>1st - IT Network System Administrator</h4>
+                        <p>LKS 30 Jepara Regency presented the prize for winning the IT Network System Administrator competition. The Linux Environment, Windows Environment, and Cisco Packet Tracert materials are in competition at this event.d.</p>
                     </div>
-                    <div class="cert-onview cert-onview-d">
-                        <p class="button-m"><span>Close</span></p>
-                        <div>
-                            <img src="assets/images/SERTIFIKAT_MAGANG_TRI MISBACHUL ATTABIK.jpg" alt="">
-                            <a class="icon" href="assets/pdf/SERTIFIKAT_MAGANG_TRI MISBACHUL ATTABIK.pdf" download=""></a>
-                        </div>
+                    <div class="cert-button">
+                        <a class="button-m cert-button-d">View <i class="rm-768 fi fi-rr-eye"></i></a>
+                        <a href="assets/pdf/CV_TRI+MISBACHUL+ATTABIK_COM.pdf" class="button-m"><span class="rm-768">Download</span> <i class="fi fi-br-download"></i></a>
                     </div>
-                </div>
-            
-            
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Design Portofolio  -->
-    <section id="portofolio">
-        <div class="button-container">
-            <a href="" class="portofolio-button slide-heading button-m button-mobile">View More</a>
-        </div>
-        <div class="container padding">
-            <div class="heading" data-aos="fade-up" data-aos-offset="100">
-                <h2>Project & Portofolio</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis rem doloribus tempore distinctio expedita dolorem!</p>
-            </div>
-            <div class="galery-list">
-
-            </div>
-            
-        </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience">
-        <div class="container padding">
-                <div class="ex-list lazy">
-                <!-- <div class="ex-item ex-item1">
-                    <div class="heading" data-aos="fade-up" data-aos-offset="100">
-                        <h2>Work Experience</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aliquid explicabo quam alias dolorum cum.</p>
+                    <div class="cert-view cert-view-d">
+                        <img src="assets/img/PIAGAM LKS_TRI MISBCAHUL ATTABIK.jpg" alt="Tri Misbachul Attabik">
+                        <a class="button-m  cert-close-d">Close</a>
                     </div>
                 </div>
+
                 
-                <div class="ex-item ex-item2">
-                    <div class="heading">
-                        <h2>Education</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aliquid explicabo quam alias dolorum cum.</p>
-                    </div>
-                </div> -->
+
 
             </div>
         </div>
     </section>
-    <!-- Tools Section Here -->
-    <section id="tools">
-        <div class="container padding">
-
-        </div>
-    </section>
-
-    <!-- Footer Section Here -->
-     <footer>
-        <div class="circle-type1"></div>
-        <div class="container padding">
-            <div class="footer-wrapper">
-                <div class="col">
-                    <a href="#" class="brand">
-                        <img src="assets/logo/logo-helloattabik-white.png" alt="Tri Misbachul Attabik">
-                        <h4>Hello <span class="satoshi-bold">Attabik</span></h4>
-                    </a>
-                    <p>I graduated from SMK Negeri 3 Jepara majoring in Computer and Network Engineering in June 2022.</p>
-                    <li><a class="button-m button-contact" href="https://wa.me/+6289514186731" target="_blank">Get in Touch <i class=" flex-center fi fi-rr-arrow-right"></i> </a></li>
-
-                </div>
-
-                <div class="col">
-                    <div class="sub-col">
-                        <h6>Email</h6>
-                        <ul>
-                            <li><a href="mailto:attabik.1402@gmail.com" target="_blank">attabik.1402@gmail.com</a></li>
-                        </ul>
-                    </div>
-                    <div class="sub-col">
-                        <h6>Address</h6>
-                        <ul>
-                            <iframe class="g-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63416.477093508525!2d110.63127279874804!3d-6.580861314359898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7118d34b9ae3ab%3A0x9d3067f98797ae0f!2sJepara%2C%20Kec.%20Jepara%2C%20Kabupaten%20Jepara%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1663681392188!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <li class="location"><a href="https://goo.gl/maps/PFVo84u59kCVchwJ7">Jepara, Indonesia</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <h6>Navigation</h6>
-                    <ul class="foot-nav-list">
-                        <li><a class="nav-item" href="#hero">Homepage</a></li>
-                        <li><a class="nav-item" href="#about">About</a></li>
-                        <li><a class="nav-item" href="#skills">Skills</a></li>
-                        <li><a class="nav-item" href="https://attabik.medium.com" target="_blank">Blog <span class="button-s">New</span></a></li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <h6>More</h6>
-                    <ul class="foot-nav-list">
-                        <li><a class="nav-item" href="#certificate">Certificate</a></li>
-                        <li><a class="nav-item" href="assets/pdf/CV_TRI+MISBACHUL+ATTABIK_COM.pdf" download="">Download CV</a></li>
-                    </ul>
-                </div>
-
-                <div class="col col-follow">
-                    <h6>Follow Me</h6>
-                    <ul class="follow menu-list">
-                        <li class = "icon" ><a href="linkedin.com/in/tri-misbachul-attabik-70a903194/" target="_blank"><i class="flex-center fi fi-brands-linkedin"></i></a></li>
-                        <li class="icon" ><a href="https://twitter.com/@Hello_Attabik" target="_blank"><i class="flex-center fi fi-brands-twitter"></i></a></li>
-                        <li class="icon"><a href="https://instagram.com/hello.attabik" target="_blank"><i class="flex-center fi fi-brands-instagram"></i></a></li>
-                        <li class="icon"><a href="https://attabik.github.io" target="_blank"><i class="flex-center fi fi-brands-github"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            
-        </div>
-        <div class="horizontal-line"></div>
-
-        <div class="container copyright">
-            <p><span class="Satoshi-Bold">Thanks</span> - for Visiting My Website</p>
-            <p><span class="Satoshi-Bold">Copyright</span> © 2022</p>
-        </div>
-    </footer>
     
-</body>
-
-<script>
-    
-</script>
-
+ </body>
     <!-- Link to JQuery -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
-    <!-- Link to GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-
-    
-    <!-- Link to Slick -->        
-    <script type="text/javascript" src="js/slick.js"></script>
-    <script type="text/javascript" src="js/slick-set.js"></script>
+      <!-- Link to GSAP -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
   
-
     <!-- Link to JS -->
     <script src="js/script.js"></script>
 
-    <!-- Link to Fake Pre-Loader -->
-    <script src="js/fake-preloader.js"></script>
+    <!-- Hero Typed -->
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
+     <script type="text/javascript">
+      var hero_typed = new Typed('.hero-typed', {
+         strings: ['Folks,', 'Everyone,', 'World,', 'Attabik,'],
+         typeSpeed: 60,
+         backSpeed: 50,
+         fadeOut: true,
+         loop: Infinity,
+         fadeOut: false,
+         fadeOutClass: 'typed-fade-out',
+         fadeOutDelay: 500,
+         showCursor: false,
+ 
+     })
+     </script>
 
-    <!-- Link to Typed.JS -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <script type="text/javascript">
-    var hero_typed = new Typed('.hero-typed', {
-        strings: ['Folks,', 'Everyone,', 'World,', 'Attabik,'],
-        typeSpeed: 60,
-        backSpeed: 50,
-        fadeOut: true,
-        loop: Infinity,
-        fadeOut: false,
-        fadeOutClass: 'typed-fade-out',
-        fadeOutDelay: 500,
-        showCursor: false,
-
-    })
-        
-    </script>
-
-    <!-- Link to AOS -->
+     <!-- Link to AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 
-    <!-- Slick -->
+    <!-- GSAP -->
     <script>
-        gsap.from('.hero-content', {duration: 1.5, rotateY: 180, opacity: 0, delay: 4})
-    </script>
-
-    <script>
-        $('.lazy').slick({
-        lazyLoad: 'ondemand',
-        slidesToShow: 3,
-        slidesToScroll: 1
-        });
+        gsap.from('.hero-content', {duration: 1.5, rotateY: 90,  rotateX: 15, opacity: 0, delay: 5})
     </script>
 
     
-
-
 </html>
