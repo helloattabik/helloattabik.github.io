@@ -81,7 +81,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: var(--transition1);
+    transition: .25s ease-out;
 }
 
 .cert-view img{

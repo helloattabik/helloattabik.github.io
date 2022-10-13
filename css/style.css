@@ -6,6 +6,14 @@
     list-style: none;
 }
 
+*,:before,*:after{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color:transparent
+}
+
 html{
     scroll-behavior: smooth;
     background-color: var(--color7);
@@ -21,7 +29,7 @@ html{
     --color5: rgb(90, 86, 109);
     --color6: rgb(228, 225, 233);
     --color7: rgb(255,255,255);
-    --color8: rgba(185, 174, 174, 0.507);
+    --color8: rgba(64, 40, 73, 0.226);
     --gradient1: linear-gradient(90deg, var(--color2), var(--color3));
 
     /* Padding, Gap, Margin */
@@ -212,7 +220,7 @@ i{
 }
 
 .container{
-    max-width: 1300px;
+    max-width: 1400px;
     margin: auto;
 }
 
