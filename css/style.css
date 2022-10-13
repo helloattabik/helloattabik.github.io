@@ -41,25 +41,21 @@ html{
 @font-face {
     font-family: Satoshi-Bold;
     src: url('../assets/fonts/Satoshi-Bold.otf');
-    font-weight: normal;
 }
 
 @font-face {
     font-family: Satoshi-Medium;
     src: url('../assets/fonts/Satoshi-Medium.otf');
-    font-weight: normal;
 }
 
 @font-face {
     font-family: Satoshi-Regular;
     src: url('../assets/fonts/Satoshi-Regular.otf');
-    font-weight: normal;
 }
 
 @font-face {
     font-family: Satoshi-Light;
     src: url('../assets/fonts/Satoshi-Light.otf');
-    font-weight: normal;
 }
 
 /* Font Size */
@@ -99,13 +95,13 @@ h5{
 
 p{
     font-family: Satoshi-Medium;
-    font-size: .9rem;
+    font-size: 1rem;
     line-height: 1.75;
 }
 
 a{
-    font-family: Satoshi-Regular;
-    font-size: .9rem;
+    font-family: Satoshi-Medium;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -267,10 +263,10 @@ i{
     }
 
     h1{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     h2{
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
     h3{
         font-size: 1.6rem;
