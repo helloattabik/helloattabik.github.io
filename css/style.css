@@ -4,6 +4,8 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+   cursor:url(https://tipe-cursor.ani), url(https://tipe-cursor.png), auto;
+
 }
 
 *,:before,*:after{
@@ -17,19 +19,20 @@
 html{
     scroll-behavior: smooth;
     background-color: var(--color7);
+filter: grayscale(30%);
 }
 
 /* Root */
 :root {
     /* Coloring */
-    --color1: rgb(3, 3, 36);
-    --color2: rgb(58, 16, 105);
-    --color3: rgb(184, 245, 148);
+    --color1: rgb(8, 8, 29);
+    --color2: rgb(75, 14, 133);
+    --color3: rgb(218, 248, 135);
     --color4: rgb(17, 13, 39);
     --color5: rgb(90, 86, 109);
-    --color6: rgb(228, 225, 233);
+    --color6: rgb(231, 217, 252);
     --color7: rgb(255,255,255);
-    --color8: rgba(199, 199, 199, 0.171);
+    --color8: rgba(218, 217, 228, 0.377);
     --gradient1: linear-gradient(90deg, var(--color2), var(--color3));
 
     /* Padding, Gap, Margin */
@@ -234,7 +237,7 @@ i{
 
 .fi-rr-arrow-right{
     width: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 /* heading */

@@ -1,0 +1,10 @@
+#about{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    background-color: var(--color1);
+}
+
+#about .heading h1{
+    color: var(--color7);
+}

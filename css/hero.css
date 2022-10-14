@@ -41,9 +41,16 @@
     z-index: 4;
 }
 
+.hero-images .hero-button :nth-child(1){
+    background: none;
+    background-color: var(--color1);
+    color: var(--color7);
+}
+
 .hero-images .hero-button :nth-child(2){
     background: none;
-    border: 2px solid var(--color6);
+    background-color: var(--color8);
+    backdrop-filter: blur(1rem);
     color: var(--color6);
 }
 

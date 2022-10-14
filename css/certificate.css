@@ -29,7 +29,7 @@
     width: 13rem;
     display: flex;
     align-items: center;
-    color: var(--color3);
+    color: var(--color5);
 }
 
 .cert-description{
@@ -81,7 +81,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: .25s ease-out;
+    transition: .5s ease-out;
 }
 
 .cert-view img{
@@ -102,6 +102,18 @@
 
 .cert-view-a.active, .cert-view-b.active, .cert-view-c.active, .cert-view-d.active{
     transform: translate(-50%, 0%);
+}
+
+.cert-view .fi-sr-eye-crossed{
+    display: none;
+}
+
+.cert-view .button-m:hover .fi-sr-eye-crossed{
+    display: flex;
+}
+
+.cert-view .button-m:hover .fi-sr-eye{
+    display: none;
 }
 
 

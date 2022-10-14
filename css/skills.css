@@ -3,6 +3,7 @@
     width: 100%;
     height: max-content;
     overflow: hidden;
+    background-color: var(--color7);
 }
 
 #skills::after{
@@ -12,10 +13,12 @@
     bottom: 0;
     height: 5rem;
     width: 100vw;
-    background: linear-gradient(90deg, var(--color1) 10%, var(--color2), var(--color3), var(--color7)90%);
+    background: linear-gradient(-90deg, var(--color1) 10%, var(--color2), var(--color3), var(--color7)90%);
     z-index:0;
 
 }
+
+
 
 #skills .container{
     display: grid;
@@ -27,6 +30,7 @@
 
 #skills .heading{
     align-items: flex-start;
+    justify-content: center;
     width: 100%;
 }
 
@@ -53,7 +57,7 @@
     border: 2px solid var(--color2);
     border-radius: var(--size5);
     overflow: hidden;
-    backdrop-filter: blur(.5rem);
+    backdrop-filter: blur(2rem);
 }
 
 .skills-item:hover::before{
@@ -87,6 +91,30 @@
     z-index: 10;
     transition: var(--transition2);
     border-radius: var(--size5);
+
+}
+
+.skills-item h5{
+    display: flex;
+    align-items: center;
+    gap: var(--size5);
+}
+
+.button-m:hover .fi-rr-arrow-right{
+    transform: translateX(20%);
+}
+
+
+.skills-item .fi-sr-head-side-thinking{
+    display: none;
+    transform: scale(0);
+    transition: .2s ease;
+}
+
+.skills-item:hover .fi-sr-head-side-thinking{
+    transform: scale(1);
+    transition: 1s ease;
+    display: flex;
 
 }
 
