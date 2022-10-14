@@ -187,4 +187,8 @@
     .hero-images img{
         width: 100%;        
     }
+
+    #cursor{
+        display: none;
+    }
 }

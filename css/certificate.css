@@ -25,7 +25,7 @@
     border-top: 2px solid var(--color4);
 }
 
-.cert-item .cert-head h3 {
+.cert-item .cert-head h2{
     width: 13rem;
     display: flex;
     align-items: center;
@@ -105,6 +105,19 @@
 }
 
 
+@media screen and (max-width: 1120px) {
+    .cert-button{
+        flex-direction: column;
+        width: max-content;
+    }
+
+    .cert-button .button-m{
+        width: 100%;
+    }
+    
+}
+
+
 @media screen and (max-width: 920px) {
 
     
@@ -114,7 +127,7 @@
 
 }
 
-.cert-item .cert-head h3 {
+.cert-item .cert-head h2 {
     width: 100%;
     color: var(--color5);
     font-size: 1.2rem;
@@ -127,7 +140,13 @@
 
 .cert-button{
     justify-content: flex-end;
+    width: 100%;
+    flex-direction: row;
     gap: 0rem;
+}
+
+.cert-button .button-m{
+    width: fit-content;
 }
 
 .cert-button a:nth-child(2){
