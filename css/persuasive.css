@@ -1,0 +1,21 @@
+#persuasive{
+    position: relative;
+    background-color: var(--color1);
+}
+
+#persuasive .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#persuasive h1{
+    max-width: 60%;
+    color: var(--color7);
+}
+
+#persuasive .button-m{
+    background: var(--gradient1);
+    color: var(--color1);
+}

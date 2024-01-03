@@ -1,0 +1,185 @@
+#certificate{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--color1);
+    overflow: hidden;
+}
+
+#certificate .heading h1{
+    color: var(--color6);
+}
+
+.cert-list{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.cert-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: var(--size1);
+    padding: var(--size3) 0;
+    border-top: 2px solid var(--color4);
+}
+
+.cert-item .cert-head h2{
+    width: 13rem;
+    display: flex;
+    align-items: center;
+    color: var(--color5);
+}
+
+.cert-description{
+    display: flex;
+    flex-direction: column;
+    gap: var(--size5);
+}
+
+.cert-description h4{
+    color: var(--color6);
+}
+
+.cert-description p{
+    color: var(--color5);
+    text-align: justify;
+}
+
+.cert-button{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cert-button a:nth-child(1){
+    border: 2px solid var(--color2);
+    color: var(--color2);
+}
+
+.cert-button a:nth-child(2){
+    background: var(--gradient1) ;
+    color: var(--color1);
+}
+
+
+
+.cert-view{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -110%);
+    width: 90%;
+    height: 90vh;
+    padding: var(--size1);
+    background-color: var(--color8);
+    backdrop-filter: blur(.5rem);
+    border-radius: 0 0  var(--size5) var(--size5) ;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-out;
+}
+
+.cert-view img{
+    height: 100%;
+}
+
+.cert-item:last-child .cert-view img{
+    transform: rotate(90deg);
+
+}
+
+.cert-view .button-m{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--color6);
+    transform: translateY(50%);
+}
+
+.cert-view-a.active, .cert-view-b.active, .cert-view-c.active, .cert-view-d.active{
+    transform: translate(-50%, 0%);
+}
+
+.cert-view .fi-sr-eye-crossed{
+    display: none;
+}
+
+.cert-view .button-m:hover .fi-sr-eye-crossed{
+    display: flex;
+}
+
+.cert-view .button-m:hover .fi-sr-eye{
+    display: none;
+}
+
+
+@media screen and (max-width: 1120px) {
+    .cert-button{
+        flex-direction: column;
+        width: max-content;
+    }
+
+    .cert-button .button-m{
+        width: 100%;
+    }
+    
+}
+
+
+@media screen and (max-width: 920px) {
+
+    
+.cert-item{
+    flex-direction: column;
+    align-items: inherit;
+
+}
+
+.cert-item .cert-head h2 {
+    width: 100%;
+    color: var(--color5);
+    font-size: 1.2rem;
+
+}
+
+.cert-description{
+    gap: var(--size1);
+}
+
+.cert-button{
+    justify-content: flex-end;
+    width: 100%;
+    flex-direction: row;
+    gap: 0rem;
+}
+
+.cert-button .button-m{
+    width: fit-content;
+}
+
+.cert-button a:nth-child(2){
+    background: none;
+    background-color: var(--color2);
+    width: 2.5rem;
+}
+
+.cert-button a:nth-child(1){
+    border: none;
+}
+
+.cert-item:not(:last-child) .cert-view img{
+    width: 105%;
+    height: auto;
+}
+
+.cert-view img{
+    width: 90%;
+    height: auto;
+
+}
+    
+}

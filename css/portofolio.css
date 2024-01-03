@@ -1,0 +1,49 @@
+#portofolio{
+    position: relative;
+    width: 100%;
+    height: 300vh;
+    overflow: hidden;
+}
+
+#portofolio .container{
+    padding: var(--size1) 0;
+}
+
+#portofolio::after{
+    content: '';
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300%;
+    height: 70%;
+    margin-top: 15rem;
+    border-radius: 50%;
+    background: radial-gradient(var(--color6)50%, var(--color2) 70%, rgba(255,255,255,0)80%);
+    filter: blur(2.5rem);
+    z-index: 0;
+}
+
+#portofolio::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color1);
+    z-index: -2;
+}
+
+#portofolio .heading h1{
+    max-width: 50%;
+    color: var(--color6);
+    z-index: -1;
+}
+
+
+@media screen and (max-width: 768px) {
+    #portofolio .heading h1{
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,22 @@
+#hire-me .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--size1);
+
+}
+
+#hire-me h1{
+    width: 60%;
+}
+
+#hire-me .button-m{
+    background-color: var(--color2);
+    color: var(--color6);
+}
+@media screen and (max-width:768px) {
+    #hire-me .container{
+        flex-direction: column;
+        justify-content: center;
+    }    
+}

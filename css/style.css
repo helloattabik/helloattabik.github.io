@@ -1,0 +1,309 @@
+*{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+   cursor:url(https://tipe-cursor.ani), url(https://tipe-cursor.png), auto;
+
+}
+
+*,:before,*:after{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color:transparent;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: var(--color7);
+filter: grayscale(30%);
+}
+
+/* Root */
+:root {
+    /* Coloring */
+    --color1: rgb(0, 0, 0);
+    --color2: #83C6DB;
+    --color3: rgb(218, 248, 135);
+    --color4: rgb(20, 20, 27);
+    --color5: rgb(70, 72, 96);
+    --color6: rgb(220, 235, 238);
+    --color7: rgb(255,255,255);
+    --color8: rgba(218, 217, 228, 0.377);
+    --gradient1: linear-gradient(90deg, var(--color2), var(--color3));
+
+    /* Padding, Gap, Margin */
+    --size1: 5rem;
+    --size2: 3rem;
+    --size3: 2rem;
+    --size4: 1rem;
+    --size5: .5rem;
+
+    /* Transition */
+    --transition1: all .5s cubic-bezier(.47,1.64,.41,1);
+    --transition2: all 1s cubic-bezier(.47,1.64,.41,1);
+}
+
+
+/* Font Family */
+@font-face {
+    font-family: Satoshi-Bold;
+    src: url('../assets/fonts/Satoshi-Bold.otf');
+}
+
+@font-face {
+    font-family: Satoshi-Medium;
+    src: url('../assets/fonts/Satoshi-Medium.otf');
+}
+
+@font-face {
+    font-family: Satoshi-Regular;
+    src: url('../assets/fonts/Satoshi-Regular.otf');
+}
+
+@font-face {
+    font-family: Satoshi-Light;
+    src: url('../assets/fonts/Satoshi-Light.otf');
+}
+
+/* Font Size */
+
+
+h1, h2, h3, h4, h5, h6, p{
+    cursor: default;
+}
+
+h1{
+    font-family: Satoshi-Regular;
+    font-size: 3.2rem;
+    font-weight: 500;
+
+}
+
+h2{
+    font-family: Satoshi-Regular;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+
+h3{
+    font-family: Satoshi-Regular;
+    font-size: 1.6rem;
+}
+
+h4{
+    font-family: Satoshi-Regular;
+    font-size: 1.3rem;
+}
+
+h5{
+    font-family: Satoshi-Regular;
+    font-size: 1rem;
+}
+
+p{
+    font-family: Satoshi-Medium;
+    font-size: 14px;
+    line-height: 2;
+}
+
+a{
+    font-family: Satoshi-Medium;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+i{
+    font-size: 1.2rem;
+}
+
+.bolder{
+    font-family: Satoshi-Bold;
+}
+
+
+/* Button Size */
+
+.button-l{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    padding: 0 1rem;
+    border-radius: 2rem;
+}
+
+.button-m{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    height: 2.5rem;
+    padding: 0 1rem;
+    border-radius: 2rem;
+}
+
+.button-s{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: .9rem;
+    padding: 0rem .3rem;
+    border-radius: 1rem;
+    background: var(--gradient1);
+    color: var(--color1);
+    font-size: .75rem;
+}
+
+/* Icons */
+.icon{
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color2);
+}
+
+.fi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container */
+.container{
+    position: relative;
+    margin: auto;
+}
+
+/* Custom Cursor */
+#cursor{
+    position: fixed;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    background-color: var(--color7);
+    mix-blend-mode: exclusion;
+    pointer-events: none;
+    z-index: 1000;
+    transition: var(--transition1);
+}
+
+/* Brand */
+.brand{
+    position: relative;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: var(--size5);
+}
+
+.brand img{
+    height: 2rem;
+}
+
+.brand h3, .brand h4{
+    color: var(--color7);
+}
+
+
+/* padding */
+
+.container.padding{
+    padding: var(--size1);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Icon */
+
+.fi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fi-rr-arrow-right{
+    width: 1.5rem;
+    font-size: 1.6rem;
+}
+
+/* heading */
+.heading{
+    display: flex;
+    align-items:center;
+    gap: var(--size4);
+    flex-direction: column;
+    padding-bottom: var(--size1);
+}
+
+.heading h1{
+    text-align: center;
+    color: var(--color1);
+}
+
+.heading p{
+    max-width: 35%;
+    text-align: center;
+    color: var(--color5);
+}
+
+
+@media screen and (max-width:920px) {
+
+    :root {
+
+    /* Padding, Gap, Margin */
+    --size1: 2rem;
+    --size2: 1.7rem;
+    --size3: 1.4rem;
+    --size4: 1.1rem;
+    --size5: .5rem;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.9rem;
+    }
+    h3{
+        font-size: 1.6rem;
+    }
+    h4{
+        font-size: 1.4rem;
+    }
+    h5{
+        font-size: 1.2rem;
+    }
+
+    h6{
+        font-size: 1rem;
+    }
+
+    .rm-768{
+        display: none;
+    }
+
+    .vw-768{
+        display: flex;
+    }
+    
+    .heading p{
+        max-width: 80%;
+    }
+
+}
