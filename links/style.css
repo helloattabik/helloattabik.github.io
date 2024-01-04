@@ -267,10 +267,10 @@ i{
     :root {
 
     /* Padding, Gap, Margin */
-    --size1: 2rem;
-    --size2: 1.7rem;
-    --size3: 1.4rem;
-    --size4: 1.1rem;
+    --size1: 3rem;
+    --size2: 2rem;
+    --size3: 1.8rem;
+    --size4: 1.5rem;
     --size5: .5rem;
     }
 
@@ -310,10 +310,10 @@ i{
 
 body{
     background-color: var(--color1);
-    width: 100%;
+    width: 100vw;
+    overflow-x: hidden;
     min-height: 100vh;
     max-height: auto;
-    padding: 0 5rem ;
 }
 
 
@@ -329,8 +329,8 @@ body{
 }
 nav{
     position: relative;
-    width: 100%;
-    height: 5rem;
+    width: 100vw;
+    height: 6rem;
 }
 
 nav .brand{
@@ -341,8 +341,8 @@ nav .brand{
     top: 0;
     left: 0;
     background-color: rgba(0,0,0,60%);
-    height: 8rem;
-    width: 100%;
+    height: 6rem;
+    width: 100vw;
     z-index: 1000;
     backdrop-filter: blur(.5rem);
 
@@ -360,7 +360,7 @@ nav a{
 }
 
 #content{
-    padding: 5rem 0;
+    padding: 5;
 }
 
 #content .links{
@@ -384,19 +384,80 @@ nav a{
 }
 
 
+/* Portofolio */
+#portofolio{
+    position: relative;
+    background: var(--color1);
+    height: 160vh;
+    width: 100vw;
+    overflow: hidden;
+}
 
-.persuasive{
+#portofolio .container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--size1);
+    width: 100%;
+    height: 100%;
+
+}
+
+.card-container{
+    width: 100%;
+    height: 100%;
+}
+
+#portofolio .card{
+    position: relative;
+    width: 100% ;
+    height: 100% ;
+    background-color: rgba(235, 235, 235, 0.3);
+    border-radius: 2rem;
+    backdrop-filter: blur(.5rem);
+    
+    border: 2px solid var(--color7);
+}
+
+
+#portofolio::before{
+    content: '';
+    position: absolute;
+
+    width: 300%;
+    height: 100vh;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    margin-top: 15rem;
+    border-radius: 50%;
+    background: radial-gradient(var(--color7)50%, var(--color2) 60%, var(--color1) 80%);
+    filter: blur(2rem);
+    z-index: 0;
+}
+
+#portofolio h1{
+    color: var(--color6);
+}
+
+
+
+/* Persuasive */
+
+#persuasive{
+    z-index: 1;
+}
+
+#persuasive .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
 
-.persuasive h1{
+#persuasive h1{
     color: var(--color6);
     width: 60%;
 }
-.persuasive .button-m{
+#persuasive .button-m{
      background: var(--gradient1);
      color: var(--color1);
     }
@@ -418,16 +479,18 @@ footer .container{
 @media screen and (max-width: 568px) {
     
     h1{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     
     h2{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
-    body{
-        padding: 0 2rem;
+
+
+    nav{
+        height: 6rem;
     }
    
 
@@ -451,13 +514,13 @@ footer .container{
         padding: .8rem;
     }
 
-    .persuasive{
+    #persuasive .container{
         flex-direction: column;
         gap: 2rem;
         align-items: flex-start;
     }
 
-    .persuasive h1{
+    #persuasive h1{
         width: 100%;
     }
 
