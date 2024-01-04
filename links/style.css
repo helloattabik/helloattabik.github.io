@@ -388,7 +388,7 @@ nav a{
 #portofolio{
     position: relative;
     background: var(--color1);
-    height: 160vh;
+    height: 120vh;
     width: 100vw;
     overflow: hidden;
 }
