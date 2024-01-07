@@ -1,0 +1,40 @@
+#footer .container{
+    padding: 0 var(--size1);
+    background-color: var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .scroll-up{
+    height: var(--size1);
+    width: var(--size1);
+    background: linear-gradient(90deg, var(--color2), var(--color3));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .content{
+    display: flex;
+    gap: var(--size5);
+}
+
+footer .brand{
+    filter: saturate(0%);
+
+}
+
+footer .content a{
+    background-color: rgba(0,0,0,0);
+    color: var(--color5);
+}
+
+footer .scroll-up i{
+    rotate: -45deg;
+    color: var(--color4);
+}
+
+footer .scroll-up:hover i{
+  margin-bottom: 1rem;
+}

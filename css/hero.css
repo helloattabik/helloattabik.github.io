@@ -5,6 +5,20 @@
     overflow: hidden;
 }
 
+#hero::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,50%);
+    height: 50%;
+    width: 80%;
+    background: radial-gradient(var(--color7)30%, var(--color2), var(--color7));
+    z-index:0;
+    filter: blur(4rem);
+
+}
+
 #hero .container{
     position: relative;
     width: 100%;
@@ -12,11 +26,12 @@
     padding: 5rem var(--size1) 0 var(--size1);
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: var(--size1);
     overflow: hidden;
-}
 
-.hero-images{
+}
+/* .hero-images{
     display: none;
     position: relative;
     max-width: 100%;
@@ -81,7 +96,7 @@
     transform: translate(-90%, 20%);
     z-index: 3;
     animation: hero-circle2 20s infinite;
-}
+} */
 
 @keyframes hero-circle1 {
     0%{
@@ -112,7 +127,7 @@
 .hero-content{
     position: relative;
     height: 100%;
-    max-width: 80%;
+    max-width: 90%;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -162,10 +177,6 @@
     }
     
 
-    #hero .container{
-        flex-direction: column-reverse;
-        align-items: center;
-    }
 
     .hero-images{
         max-height: 50%;
@@ -177,13 +188,13 @@
 
     .hero-content{
         padding-top: var(--size1);
-        justify-content: flex-start;
+        justify-content: center;
         text-align: center;
         align-items: center;
     }
 
-    .hero-content .hero-button{
-        display: none;
+    .hero-content .hero-button .contact-me{
+ display: none;
     }
 
  
@@ -196,9 +207,7 @@
 
 
 @media screen and (max-width: 768px) {
-    .hero-images img{
-        width: 100%;        
-    }
+    
 
     #cursor{
         display: none;
